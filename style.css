@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: #121213;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    background: #1a1a1b;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px #111a;
+    padding: 36px 32px 28px;
+    box-sizing: border-box;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+h1 {
+    margin-bottom: 18px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#wordle-board {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.square {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 2em;
+    background: #fff;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid #d3d6da;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    transition: background .2s, border .2s, color .2s, box-shadow .2s;
+    user-select: none;
+}
+
+.square.filled {
+    border-color: #878a8c;
+}
+
+.square.correct {
+    background: #6aaa64;
+    color: #fff;
+    border-color: #6aaa64;
+}
+
+.square.misplaced {
+    background: #c9b458;
+    color: #fff;
+    border-color: #c9b458;
+}
+
+.square.wrong {
+    background: #787c7e;
+    color: #fff;
+    border-color: #787c7e;
+}
+
+.square.cursor {
+    border: 2.5px solid #538dff;
+    animation: blink-cursor 1s step-end infinite alternate;
+}
+@keyframes blink-cursor {
+    0% { border-color: #538dff; }
+    100% { border-color: #fff; }
+}
+
+.actions {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 7px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #538dff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background .2s;
+}
+button:hover {
+    background: #2c62be;
+}
+
+#message {
+    margin-top: 12px;
+    font-size: 1.1em;
+    text-align: center;
+    min-height: 1.3em;
+    color: #ffe082;
+}
