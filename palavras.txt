@@ -37,7 +37,7 @@ vidro
 telha  
 barco  
 navio  
-escola  
+tenis  
 aluno  
 prova  
 texto  
@@ -49,8 +49,7 @@ valor
 nivel  
 grupo  
 regra  
-golfe  
-musica  
+golfe    
 ritmo  
 marca  
 plano  
@@ -66,7 +65,6 @@ sonho
 chuva  
 vento  
 terra  
-planta  
 folha  
 raiz  
 fruto  
