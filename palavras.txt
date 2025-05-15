@@ -43,14 +43,12 @@ prova
 texto  
 ideia  
 ordem  
-caixa  
-loja  
+caixa
 preco  
 valor  
 nivel  
 grupo  
 regra  
-jogo  
 golfe  
 musica  
 ritmo  
@@ -70,7 +68,6 @@ vento
 terra  
 planta  
 folha  
-ramo  
 raiz  
 fruto  
 fator  
